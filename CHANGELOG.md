@@ -3,6 +3,13 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.4.1] - 2026-05-25
+
+### Changed
+- Tested up to WordPress 7.0.
+
+---
+
 ## [1.4.0] - 2026-04-22
 
 ### Added
