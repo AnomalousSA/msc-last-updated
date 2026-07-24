@@ -2,9 +2,9 @@
 Contributors: djm56
 Tags: last updated, last modified, post date, content date, editorial
 Requires at least: 5.9
-Tested up to: 7.0
+Tested up to: 7.0.2
 Requires PHP: 7.4
-Stable tag: 1.4.1
+Stable tag: 1.4.2
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ Yes. MSC Post Last Updated Date Pro adds relative dates ("3 days ago"), a hybrid
 
 == Changelog ==
 
+= 1.4.2 =
+* Tested with WordPress 7.0.2. No functional changes.
+
 = 1.4.1 =
 * Tested with WordPress 7.0. No functional changes.
 
@@ -113,6 +116,9 @@ Yes. MSC Post Last Updated Date Pro adds relative dates ("3 days ago"), a hybrid
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.4.2 =
+* Tested with WordPress 7.0.2. No functional changes.
 
 = 1.4.1 =
 * Tested with WordPress 7.0. No functional changes.

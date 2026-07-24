@@ -2,7 +2,7 @@
 
 Display and control the post last-updated date in flexible positions.
 
-**Version:** 1.3.0 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
+**Version:** 1.4.2 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
 
 ---
 

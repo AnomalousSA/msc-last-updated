@@ -3,6 +3,12 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.4.2] - 2026-07-24
+
+### Changed
+
+- Confirmed compatibility with WordPress 7.0.2 — updated "Tested up to" header to 7.0.2. No functional changes.
+
 ## [1.4.1] - 2026-05-25
 
 ### Changed

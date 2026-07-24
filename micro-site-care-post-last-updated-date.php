@@ -3,12 +3,12 @@
  * Plugin Name: Micro Site Care: Post Last Updated Date
  * Plugin URI: https://anomalous.co.za
  * Description: Display and control the post last-updated date in flexible positions.
- * Version: 1.4.1
+ * Version: 1.4.2
  * Author: Anomalous Developers
  * Text Domain: micro-site-care-post-last-updated-date
  * Domain Path: /languages
  * Requires at least: 5.9
- * Tested up to: 7.0
+ * Tested up to: 7.0.2
  * Requires PHP: 7.4
  * License: GPL-2.0+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Current plugin version.
  */
-define( 'MSCLUD_PLUGIN_VERSION', '1.4.1' );
+define( 'MSCLUD_PLUGIN_VERSION', '1.4.2' );
 
 /**
  * Absolute path to the main plugin file.
