@@ -115,7 +115,7 @@ class Settings {
 			$position = 'after';
 		}
 
-		if ( ! in_array( $date_mode, array( 'site', 'custom' ), true ) ) {
+		if ( ! in_array( $date_mode, array( 'site', 'custom', 'relative' ), true ) ) {
 			$date_mode = 'site';
 		}
 
@@ -213,30 +213,14 @@ class Settings {
 					<?php esc_html_e( 'Settings', 'micro-site-care-post-last-updated-date' ); ?>
 				</a>
 				<a href="<?php echo esc_url( $tab_url_usage ); ?>" class="nav-tab <?php echo esc_attr( 'usage' === $active_tab ? 'nav-tab-active' : '' ); ?>">
-					<?php esc_html_e( 'Usage &amp; Support', 'micro-site-care-post-last-updated-date' ); ?>
+					<?php esc_html_e( 'Support', 'micro-site-care-post-last-updated-date' ); ?>
 				</a>
 			</nav>
 
 			<?php if ( 'settings' === $active_tab ) : ?>
 
-				<div class="msclu-settings-layout" style="display:flex;gap:20px;align-items:flex-start;margin-top:1em;">
-					<div class="msclu-settings-sidebar" style="width:240px;flex-shrink:0;order:2;">
-						<div class="postbox">
-							<div class="postbox-header">
-								<h2 class="hndle" style="font-size:14px;padding:8px 12px;">
-									<?php esc_html_e( 'Support', 'micro-site-care-post-last-updated-date' ); ?>
-								</h2>
-							</div>
-							<div class="inside">
-								<p><?php esc_html_e( 'Questions, bugs, or setup help?', 'micro-site-care-post-last-updated-date' ); ?></p>
-								<a class="button" style="width:100%;text-align:center;box-sizing:border-box;" href="https://anomalous.co.za" target="_blank" rel="noopener noreferrer">
-									<?php esc_html_e( 'Get Support', 'micro-site-care-post-last-updated-date' ); ?>
-								</a>
-							</div>
-						</div>
-					</div><!-- .msclu-settings-sidebar -->
-
-					<div class="msclu-settings-main" style="flex:1;min-width:0;order:1;">
+				<div class="msclu-settings-layout" style="margin-top:1em;">
+					<div class="msclu-settings-main" style="min-width:0;">
 						<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
 							<input type="hidden" name="action" value="micro-site-care-post-last-updated-date_save_settings" />
 							<?php wp_nonce_field( 'micro-site-care-post-last-updated-date_save_settings' ); ?>
@@ -284,8 +268,9 @@ class Settings {
 										<th scope="row"><label for="date_mode"><?php esc_html_e( 'Date format source', 'micro-site-care-post-last-updated-date' ); ?></label></th>
 										<td>
 											<select id="date_mode" name="date_mode">
-												<option value="site"   <?php selected( 'site',   $options['date_mode'] ); ?>><?php esc_html_e( 'Use WordPress site date format', 'micro-site-care-post-last-updated-date' ); ?></option>
-												<option value="custom" <?php selected( 'custom', $options['date_mode'] ); ?>><?php esc_html_e( 'Use custom date format',          'micro-site-care-post-last-updated-date' ); ?></option>
+												<option value="site"     <?php selected( 'site',     $options['date_mode'] ); ?>><?php esc_html_e( 'Use WordPress site date format', 'micro-site-care-post-last-updated-date' ); ?></option>
+												<option value="custom"   <?php selected( 'custom',   $options['date_mode'] ); ?>><?php esc_html_e( 'Use custom date format',          'micro-site-care-post-last-updated-date' ); ?></option>
+												<option value="relative" <?php selected( 'relative', $options['date_mode'] ); ?>><?php esc_html_e( 'Relative (e.g. "3 days ago")',    'micro-site-care-post-last-updated-date' ); ?></option>
 											</select>
 											<p class="description">
 												<?php
@@ -476,11 +461,14 @@ class Settings {
 					</p>
 
 					<h2 style="margin-top:1.5em;"><?php esc_html_e( 'Support', 'micro-site-care-post-last-updated-date' ); ?></h2>
-					<p><?php esc_html_e( 'If you need help with setup, have found a bug, or want to request a feature, get in touch.', 'micro-site-care-post-last-updated-date' ); ?></p>
 					<p>
-						<a class="button button-primary" href="https://anomalous.co.za" target="_blank" rel="noopener noreferrer">
-							<?php esc_html_e( 'Get Support', 'micro-site-care-post-last-updated-date' ); ?>
-						</a>
+						<?php
+						printf(
+							/* translators: %s is the URL to the plugin support forum on WordPress.org. */
+							wp_kses_post( __( 'Need a hand? Visit the <a href="%s" target="_blank" rel="noopener noreferrer">plugin support forum on WordPress.org</a> for help, bug reports and feature requests.', 'micro-site-care-post-last-updated-date' ) ),
+							esc_url( 'https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date/' )
+						);
+						?>
 					</p>
 				</div>
 

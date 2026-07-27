@@ -216,11 +216,9 @@ class MSCLU_Module_Test extends WP_UnitTestCase {
 	}
 
 	/**
-	 * Test enqueue_assets does not enqueue when disabled.
-	 *
-	 * @covers ::enqueue_assets
+	 * Test the module enqueues no front-end assets.
 	 */
-	public function test_enqueue_assets_disabled() {
+	public function test_no_frontend_assets_enqueued() {
 		$plugin = $this->getMockBuilder( 'MSCLU\\Plugin' )
 			->disableOriginalConstructor()
 			->setMethods( array( 'get_option' ) )
@@ -231,16 +229,16 @@ class MSCLU_Module_Test extends WP_UnitTestCase {
 			->willReturnCallback(
 				function ( $key, $default = null ) {
 					$options = array(
-						'module_enabled' => 0,
+						'module_enabled' => 1,
 					);
 					return $options[ $key ] ?? $default;
 				}
 			);
 
 		$module = new MSCLU\Module( $plugin );
-		$module->enqueue_assets();
 
-		// No styles should be enqueued.
+		// The plugin is display-only: no styles or scripts are registered.
+		$this->assertFalse( method_exists( $module, 'enqueue_assets' ) );
 		$this->assertFalse( wp_style_is( 'micro-site-care-post-last-updated-date-styles', 'enqueued' ) );
 	}
 }

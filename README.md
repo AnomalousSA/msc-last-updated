@@ -2,7 +2,7 @@
 
 Display and control the post last-updated date in flexible positions.
 
-**Version:** 1.4.2 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
+**Version:** 1.5.0 | **Requires WP:** 5.9+ | **Requires PHP:** 7.4+ | **License:** GPL-2.0+
 
 ---
 
@@ -58,9 +58,9 @@ Navigate to **Settings → MSC Post Last Updated Date**.
 | **Label template** | Text to display. Use `%s` where the formatted date should appear. Omit `%s` for a static label. | `Updated %s` |
 | **Date format source** | Use the WordPress site date format, or specify a custom PHP date format string. | Site format |
 | **Custom date format** | PHP date format string (e.g. `d/m/Y`). Only used when **Date format source** is set to Custom. | `F j, Y` |
-| **Visibility condition** | When ticked, the label is suppressed on posts whose modified date equals their publish date. | Unticked |
+| **Visibility condition** | When ticked, the label is suppressed on posts whose modified date equals their publish date. | Ticked |
 | **Post type mode** | Include only selected types, or exclude selected types from all public post types. | Include selected |
-| **Post types** | The post types to target based on the mode above. | `post` |
+| **Post types** | The post types to target based on the mode above. | `post`, `page` |
 
 ---
 
@@ -68,7 +68,7 @@ Navigate to **Settings → MSC Post Last Updated Date**.
 
 Use these PHP functions in theme templates when **Automatic placement** is set to **Manual only**.
 
-### `msclup_the_last_updated( $post_id = null )`
+### `msclup_the_last_updated( $post_id = 0, $context = array() )`
 
 Echoes the rendered HTML directly. Use inside The Loop or pass a post ID.
 
@@ -88,7 +88,7 @@ msclup_the_last_updated( 42 );
 </p>
 ```
 
-### `msclup_get_last_updated( $post_id = null )`
+### `msclup_get_last_updated( $post_id = 0, $context = array() )`
 
 Returns the rendered HTML string instead of echoing. Useful for capturing output or passing to another function.
 
@@ -103,10 +103,12 @@ echo wp_kses_post( $html );
 
 | Hook | Signature | Description |
 |---|---|---|
-| `msclu_should_display` | `( bool $display, WP_Post $post )` | Return `false` to prevent the label from appearing on a specific post. |
-| `msclu_label_text` | `( string $label, WP_Post $post )` | Override the rendered label string (including the date) before it is wrapped in the `<time>` element. |
-| `msclu_wrapper_classes` | `( array $classes, WP_Post $post )` | Add or remove CSS classes on the `<p>` wrapper element. |
-| `msclu_output_html` | `( string $html, WP_Post $post )` | Filter the complete final HTML string before it is injected or returned. |
+| `msclu_should_display` | `( bool $display, WP_Post $post, int $modified, int $published, array $context )` | Return `false` to prevent the label from appearing on a specific post. |
+| `msclu_label_text` | `( string $label, WP_Post $post, string $formatted_date, int $modified, int $published, array $context )` | Override the rendered label string (including the date) before it is wrapped in the `<time>` element. |
+| `msclu_wrapper_classes` | `( array $classes, WP_Post $post, array $context )` | Add or remove CSS classes on the `<p>` wrapper element. |
+| `msclu_output_html` | `( string $html, WP_Post $post, string $label, int $modified, array $context )` | Filter the complete final HTML string before it is injected or returned. |
+
+Additional hooks: `msclu_pro_active` (filter, bool — Pro detection), `msclu_settings_sanitized_options` (filter — `( array $options, array $sanitized_post )`), `msclu_settings_sections` (action — fires inside the settings form for extensions).
 
 **Example — hide the label on a specific post:**
 
@@ -135,12 +137,22 @@ The plugin is fully translation-ready.
 - **Domain path:** `/languages`
 - **POT template:** `languages/micro-site-care-post-last-updated-date.pot`
 
-Included translations:
+Included translations (12 locales, each with `.po` / `.mo`):
 
-| Locale | Language | File |
-|---|---|---|
-| `pt_BR` | Brazilian Portuguese | `micro-site-care-post-last-updated-date-pt_BR.po` / `.mo` |
-| `pt_PT` | European Portuguese | `micro-site-care-post-last-updated-date-pt_PT.po` / `.mo` |
+| Locale | Language |
+|---|---|
+| `de_DE` | German |
+| `de_CH` | Swiss German |
+| `es_ES` | Spanish (Spain) |
+| `es_MX` | Spanish (Mexico) |
+| `fr_FR` | French (France) |
+| `fr_CA` | French (Canada) |
+| `it_IT` | Italian |
+| `ja` | Japanese |
+| `nl_NL` | Dutch |
+| `nl_BE` | Dutch (Belgium) |
+| `pt_BR` | Brazilian Portuguese |
+| `pt_PT` | European Portuguese |
 
 ### Regenerate the POT file
 

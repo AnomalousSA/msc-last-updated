@@ -10,3 +10,5 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 }
 
 delete_option( 'msclu_options' );
+delete_option( 'msclu_activated_time' );
+delete_option( 'msclu_review_dismissed' );

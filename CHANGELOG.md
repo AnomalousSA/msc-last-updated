@@ -3,6 +3,27 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.6.0] - 2026-07-25
+
+### Changed
+
+- Renamed the "Usage & Support" tab to "Support".
+- Support now links to the plugin's WordPress.org support forum. Removed the support box from the Settings tab and the old contact button on the Support tab.
+
+## [1.5.0] - 2026-07-24
+
+### Added
+
+- `[msclu_last_updated]` shortcode to render the last-updated date anywhere, with optional `post_id` and `relative` attributes (registered only when no Pro extension owns the shortcode).
+- Optional relative-date mode ("3 days ago") as a third Date format source; the `<time datetime>` attribute remains an absolute ISO-8601 timestamp.
+- One-time, dismissible in-plugin review request on the settings page (shown 7+ days after activation).
+
+### Changed
+
+- Renamed listing title to "MSC: Post Last Updated Date" (admin Plugin Name header aligned); WordPress.org readme rewritten with searchable tags, keyword-rich description and an expanded 12-question FAQ.
+- Removed dead front-end stylesheet enqueue (`assets/css/last-updated.css` was never shipped); removed the empty `assets/` scaffold — the plugin now loads zero front-end assets.
+- Developer docs (README.md) corrected: full 12-locale translation list, accurate option defaults (visibility condition on by default; post types default `post`, `page`), full filter hook signatures, and previously undocumented hooks `msclu_pro_active`, `msclu_settings_sanitized_options`, `msclu_settings_sections`.
+
 ## [1.4.2] - 2026-07-24
 
 ### Changed

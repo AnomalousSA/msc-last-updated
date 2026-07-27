@@ -68,6 +68,10 @@ class Plugin {
 		if ( ! is_array( $options ) ) {
 			update_option( self::OPTION_KEY, self::default_options() );
 		}
+
+		if ( ! get_option( 'msclu_activated_time' ) ) {
+			update_option( 'msclu_activated_time', time() );
+		}
 	}
 
 	/**
@@ -84,6 +88,105 @@ class Plugin {
 		$this->settings = new Settings( $this );
 
 		$this->module = new Module( $this );
+
+		// Register the [msclu_last_updated] shortcode (skipped if a Pro extension owns it).
+		if ( ! $this->is_pro_active() ) {
+			add_shortcode( 'msclu_last_updated', array( $this, 'render_shortcode' ) );
+		}
+
+		if ( is_admin() ) {
+			add_action( 'admin_notices', array( $this, 'maybe_render_review_notice' ) );
+			add_action( 'admin_init', array( $this, 'maybe_handle_review_dismiss' ) );
+		}
+	}
+
+	/**
+	 * Renders the [msclu_last_updated] shortcode.
+	 *
+	 * Attributes:
+	 * - post_id  (int)  Post to render for. Defaults to the current post.
+	 * - relative (bool) Force relative ("3 days ago") or absolute date for this instance.
+	 *
+	 * @param array<string,mixed>|string $atts Shortcode attributes.
+	 * @return string
+	 */
+	public function render_shortcode( $atts ) {
+		$atts = shortcode_atts(
+			array(
+				'post_id'  => 0,
+				'relative' => '',
+			),
+			$atts,
+			'msclu_last_updated'
+		);
+
+		$context = array( 'source' => 'shortcode' );
+
+		if ( '' !== $atts['relative'] ) {
+			$context['date_mode'] = filter_var( $atts['relative'], FILTER_VALIDATE_BOOLEAN ) ? 'relative' : 'site';
+		}
+
+		return $this->module->get_last_updated_html( (int) $atts['post_id'], $context );
+	}
+
+	/**
+	 * Shows a one-time, dismissible review request on the plugin's settings page.
+	 *
+	 * @return void
+	 */
+	public function maybe_render_review_notice() {
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+		$screen = get_current_screen();
+		if ( ! $screen || 'settings_page_msclu-settings' !== $screen->id ) {
+			return;
+		}
+
+		if ( get_option( 'msclu_review_dismissed' ) ) {
+			return;
+		}
+
+		$since = (int) get_option( 'msclu_activated_time', 0 );
+		if ( $since <= 0 ) {
+			// Start the clock for installs that predate this option.
+			update_option( 'msclu_activated_time', time() );
+			return;
+		}
+
+		if ( ( time() - $since ) < ( 7 * DAY_IN_SECONDS ) ) {
+			return;
+		}
+
+		$review_url  = 'https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date/reviews/#new-post';
+		$dismiss_url = wp_nonce_url( add_query_arg( 'msclu_dismiss_review', '1' ), 'msclu_dismiss_review' );
+		?>
+		<div class="notice notice-info is-dismissible">
+			<p>
+				<?php esc_html_e( 'Enjoying MSC: Post Last Updated Date? A quick review would really help other WordPress users find it.', 'micro-site-care-post-last-updated-date' ); ?>
+				<a href="<?php echo esc_url( $review_url ); ?>" target="_blank" rel="noopener noreferrer"><?php esc_html_e( 'Leave a review', 'micro-site-care-post-last-updated-date' ); ?></a>
+				&nbsp;·&nbsp;
+				<a href="<?php echo esc_url( $dismiss_url ); ?>"><?php esc_html_e( 'No thanks', 'micro-site-care-post-last-updated-date' ); ?></a>
+			</p>
+		</div>
+		<?php
+	}
+
+	/**
+	 * Permanently dismisses the review request.
+	 *
+	 * @return void
+	 */
+	public function maybe_handle_review_dismiss() {
+		if ( ! current_user_can( 'manage_options' ) || ! isset( $_GET['msclu_dismiss_review'] ) ) {
+			return;
+		}
+
+		check_admin_referer( 'msclu_dismiss_review' );
+		update_option( 'msclu_review_dismissed', 1 );
+		wp_safe_redirect( remove_query_arg( array( 'msclu_dismiss_review', '_wpnonce' ) ) );
+		exit;
 	}
 
 	/**
@@ -155,7 +258,7 @@ class Plugin {
 			'cron'              => false,
 			'meta_registration' => false,
 			'bulk_actions'      => false,
-			'shortcode'         => false,
+			'shortcode'         => true,
 			'ajax'              => false,
 		);
 

@@ -26,26 +26,7 @@ class Module {
 	public function __construct( $plugin ) {
 		$this->plugin = $plugin;
 
-		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_assets' ) );
 		add_filter( 'the_content', array( $this, 'filter_content' ), 20 );
-	}
-
-	/**
-	 * Enqueue frontend assets.
-	 */
-	public function enqueue_assets() {
-		if ( ! $this->is_enabled() ) {
-			return;
-		}
-
-		if ( file_exists( MSCLUD_PLUGIN_DIR . 'assets/css/last-updated.css' ) ) {
-			wp_enqueue_style(
-				'micro-site-care-post-last-updated-date-styles',
-				MSCLUD_PLUGIN_URL . 'assets/css/last-updated.css',
-				array(),
-				MSCLUD_PLUGIN_VERSION
-			);
-		}
 	}
 
 	/**
@@ -131,14 +112,23 @@ class Module {
 			return '';
 		}
 
-		$date_mode      = (string) $this->plugin->get_option( 'date_mode', 'site' );
-		$custom_format  = (string) $this->plugin->get_option( 'custom_format', 'F j, Y' );
-		$date_format    = 'custom' === $date_mode ? $custom_format : get_option( 'date_format' );
-		if ( empty( $date_format ) ) {
-			$date_format = get_option( 'date_format' );
-		}
+		// Date mode can be overridden per render via context (e.g. the shortcode's `relative` attribute).
+		$date_mode     = isset( $context['date_mode'] ) ? (string) $context['date_mode'] : (string) $this->plugin->get_option( 'date_mode', 'site' );
+		$custom_format = (string) $this->plugin->get_option( 'custom_format', 'F j, Y' );
 
-		$formatted_date = wp_date( $date_format, $modified );
+		if ( 'relative' === $date_mode ) {
+			$formatted_date = sprintf(
+				/* translators: %s is a human-readable time difference, e.g. "3 days". */
+				__( '%s ago', 'micro-site-care-post-last-updated-date' ),
+				human_time_diff( $modified, time() )
+			);
+		} else {
+			$date_format = 'custom' === $date_mode ? $custom_format : get_option( 'date_format' );
+			if ( empty( $date_format ) ) {
+				$date_format = get_option( 'date_format' );
+			}
+			$formatted_date = wp_date( $date_format, $modified );
+		}
 		// translators: %s is the formatted post last-updated date.
 		$label_template = (string) $this->plugin->get_option( 'label_text', __( 'Updated %s', 'micro-site-care-post-last-updated-date' ) );
 		// If the template contains %s, replace it with the formatted date. Otherwise render the label as-is.
