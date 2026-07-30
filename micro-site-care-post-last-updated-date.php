@@ -1,10 +1,11 @@
 <?php
 /**
  * Plugin Name: MSC: Post Last Updated Date
- * Plugin URI: https://anomalous.co.za
+ * Plugin URI: https://github.com/djm56/msc-last-updated
  * Description: Display and control the post last-updated date in flexible positions.
  * Version: 1.6.0
  * Author: Anomalous Developers
+ * Author URI: https://anomalous.co.za
  * Text Domain: micro-site-care-post-last-updated-date
  * Domain Path: /languages
  * Requires at least: 5.9
