@@ -10,12 +10,12 @@ Display and control the post last-updated date in flexible positions.
 
 - Show the last-updated date automatically **before content**, **after content**, **both**, or set to **Manual** for full theme control.
 - Customise the label with a flexible template — use `%s` as the date placeholder, or omit it for a static label with no date.
-- Choose between the **WordPress site date format** or a **custom PHP date format string**.
+- Choose between the **WordPress site date format**, a **custom PHP date format string**, or a **relative date** ("3 days ago").
 - Optionally suppress the label when the modified date matches the publish date (unchanged posts).
 - **Include** specific post types or **exclude** selected types from an all-types baseline.
 - Clean HTML5 `<time>` element output with an ISO 8601 `datetime` attribute for SEO and accessibility.
 - Four developer filter hooks to customise visibility, label text, CSS classes, and final HTML output.
-- Designed for extension by **MSC Post Last Updated Date Pro** (relative dates, style presets, per-post overrides, shortcode with attribute overrides).
+- `[msclu_last_updated]` shortcode to place the date anywhere shortcodes run.
 
 ---
 
@@ -56,7 +56,7 @@ Navigate to **Settings → MSC Post Last Updated Date**.
 | **Enable output** | Master on/off for the last-updated label. | Enabled |
 | **Automatic placement** | Where to inject the label: After content, Before content, Before and after, or Manual only. | After content |
 | **Label template** | Text to display. Use `%s` where the formatted date should appear. Omit `%s` for a static label. | `Updated %s` |
-| **Date format source** | Use the WordPress site date format, or specify a custom PHP date format string. | Site format |
+| **Date format source** | Use the WordPress site date format, specify a custom PHP date format string, or show a relative date ("3 days ago"). | Site format |
 | **Custom date format** | PHP date format string (e.g. `d/m/Y`). Only used when **Date format source** is set to Custom. | `F j, Y` |
 | **Visibility condition** | When ticked, the label is suppressed on posts whose modified date equals their publish date. | Ticked |
 | **Post type mode** | Include only selected types, or exclude selected types from all public post types. | Include selected |
@@ -99,6 +99,25 @@ echo wp_kses_post( $html );
 
 ---
 
+## Shortcode
+
+`[msclu_last_updated]` renders the same markup as the template tags, anywhere shortcodes run.
+
+| Attribute | Description | Default |
+|---|---|---|
+| `post_id` | Target post ID. | Current post |
+| `relative` | `true` forces a relative date ("3 days ago"); `false` forces the site date format. Omit to follow the **Date format source** setting. | Follows setting |
+
+```
+[msclu_last_updated]
+[msclu_last_updated post_id="42"]
+[msclu_last_updated relative="true"]
+```
+
+Registration is skipped when a callback on the `msclu_pro_active` filter returns `true`.
+
+---
+
 ## Filter Hooks
 
 | Hook | Signature | Description |
@@ -108,7 +127,7 @@ echo wp_kses_post( $html );
 | `msclu_wrapper_classes` | `( array $classes, WP_Post $post, array $context )` | Add or remove CSS classes on the `<p>` wrapper element. |
 | `msclu_output_html` | `( string $html, WP_Post $post, string $label, int $modified, array $context )` | Filter the complete final HTML string before it is injected or returned. |
 
-Additional hooks: `msclu_pro_active` (filter, bool — Pro detection), `msclu_settings_sanitized_options` (filter — `( array $options, array $sanitized_post )`), `msclu_settings_sections` (action — fires inside the settings form for extensions).
+Additional hooks: `msclu_pro_active` (filter, bool — legacy extension gate; returning `true` suppresses registration of the built-in `[msclu_last_updated]` shortcode so an add-on can own it), `msclu_settings_sanitized_options` (filter — `( array $options, array $sanitized_post )`), `msclu_settings_sections` (action — fires inside the settings form for extensions).
 
 **Example — hide the label on a specific post:**
 
