@@ -1,10 +1,10 @@
 # MSC: Post Last Updated Date
 
-![Version](https://img.shields.io/badge/version-1.6.0-blue)
+![Version](https://img.shields.io/badge/version-1.6.1-blue)
 ![License](https://img.shields.io/badge/license-GPL--2.0%2B-green)
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple)
 ![WordPress](https://img.shields.io/badge/WordPress-5.9%2B-blue)
-![Tested up to](https://img.shields.io/badge/tested%20up%20to-7.0-blue)
+![Tested up to](https://img.shields.io/badge/tested%20up%20to-7.1-blue)
 
 Display and control the post last-updated date in flexible positions.
 
@@ -127,7 +127,7 @@ Registration is skipped when a callback on the `msclu_pro_active` filter returns
 
 | Constant | Value | Description |
 |----------|-------|-------------|
-| `MSCLUD_PLUGIN_VERSION` | `'1.6.0'` | Current plugin version |
+| `MSCLUD_PLUGIN_VERSION` | `'1.6.1'` | Current plugin version |
 | `MSCLUD_PLUGIN_FILE` | `__FILE__` | Absolute path to main plugin file |
 | `MSCLUD_PLUGIN_DIR` | Plugin directory path | Absolute path to plugin directory |
 | `MSCLUD_PLUGIN_URL` | Plugin directory URL | URL to plugin directory |

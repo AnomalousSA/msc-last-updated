@@ -2,9 +2,9 @@
 Contributors: djm56
 Tags: last updated date, last modified date, show modified date, dateModified schema, content freshness
 Requires at least: 5.9
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -113,6 +113,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 
 == Changelog ==
 
+= 1.6.1 =
+* Tested with WordPress 7.1. No functional changes.
+
 = 1.6.0 =
 * Changed: Renamed the "Usage & Support" tab to "Support".
 * Changed: Support now links to the plugin's WordPress.org support forum; removed the Settings-tab support box and the old contact button.
@@ -158,6 +161,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.6.1 =
+Compatibility update: confirmed tested against WordPress 7.1. No functional changes — safe update.
 
 = 1.5.0 =
 Improved WordPress.org listing and FAQ; removes a dead stylesheet enqueue. No behaviour changes — safe update.
