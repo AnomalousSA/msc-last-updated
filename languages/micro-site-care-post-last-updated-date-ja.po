@@ -5,29 +5,28 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Micro Site Care: Post Last Updated Date 1.4.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-"
-"post-last-updated-date\n"
-"POT-Creation-Date: 2026-04-22T15:58:01+00:00\n"
+"Project-Id-Version: MSC: Post Last Updated Date 1.6.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date\n"
+"POT-Creation-Date: 2026-08-27T15:26:32+00:00\n"
 "PO-Revision-Date: 2026-03-28 00:00+0000\n"
-"Last-Translator: Anomalous Developers <support@anomalous.co.za>\n"
-"Language-Team: Japanese <support@anomalous.co.za>\n"
+"Last-Translator: Anomalous Developers <dev@anomalous.com.au>\n"
+"Language-Team: Anomalous Developers <dev@anomalous.com.au>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Domain: micro-site-care-post-last-updated-date\n"
 
 #. Plugin Name of the plugin
 #: micro-site-care-post-last-updated-date.php
-msgid "Micro Site Care: Post Last Updated Date"
-msgstr "Micro Site Care: 投稿最終更新日"
+msgid "MSC: Post Last Updated Date"
+msgstr "MSC: 投稿の最終更新日"
 
 #. Plugin URI of the plugin
 #: micro-site-care-post-last-updated-date.php
-msgid "https://anomalous.co.za"
-msgstr "https://anomalous.co.za"
+msgid "https://github.com/djm56/msc-last-updated"
+msgstr "https://github.com/djm56/msc-last-updated"
 
 #. Description of the plugin
 #: micro-site-care-post-last-updated-date.php
@@ -39,12 +38,23 @@ msgstr "投稿の最終更新日を柔軟な位置にisplay和管理します。
 msgid "Anomalous Developers"
 msgstr "Anomalous Developers"
 
+#. Author URI of the plugin
+#: micro-site-care-post-last-updated-date.php
+msgid "https://anomalous.co.za"
+msgstr "https://anomalous.co.za"
+
+#. translators: %s is a human-readable time difference, e.g. "3 days".
+#: includes/class-micro-site-care-post-last-updated-date-module.php:122
+#, php-format
+msgid "%s ago"
+msgstr "%s前"
+
 #. translators: %s is the formatted post last-updated date.
-#: includes/class-micro-site-care-post-last-updated-date-module.php:143
+#: includes/class-micro-site-care-post-last-updated-date-module.php:133
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:101
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:124
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:186
-#: includes/class-micro-site-care-post-last-updated-date.php:101
+#: includes/class-micro-site-care-post-last-updated-date.php:204
 #, php-format
 msgid "Updated %s"
 msgstr "更新日: %s"
@@ -72,392 +82,348 @@ msgid "Settings"
 msgstr "設定"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:216
-msgid "Usage &amp; Support"
-msgstr "使用とサポート"
-
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:227
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:478
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:463
 msgid "Support"
 msgstr "サポート"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:231
-msgid "Questions, bugs, or setup help?"
-msgstr "質問、バグ、設定のヘルプ？"
-
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:233
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:482
-msgid "Get Support"
-msgstr "サポートを受ける"
-
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:247
 msgid "Enable output"
 msgstr "出力を有効化"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:251
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:235
 msgid "Show Last Updated date on enabled post types."
 msgstr "有効な投稿タイプに最終更新日を表示します。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:256
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:240
 msgid "Automatic placement"
 msgstr "自動配置"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:259
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:371
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:243
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "After content"
 msgstr "コンテンツの後に"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:260
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:372
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:244
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Before content"
 msgstr "コンテンツの前に"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:261
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:245
 msgid "Before and after content"
 msgstr "コンテンツの前後に"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:262
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:246
 msgid "Manual only (template tag)"
 msgstr "手動のみ（テンプレートタグ）"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:264
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:248
 msgid ""
-"Use Manual to place output via the template tag in your theme. See the Usage "
-"tab for examples."
-msgstr ""
-"手動のみを使用して、テーマ内でテンプレートタグ経由で出力を配置します。例につ"
-"いては「使用とサポート」タブをご覧ください。"
+"Use Manual to place output via the template tag in your theme. See the Usage"
+" tab for examples."
+msgstr "手動のみを使用して、テーマ内でテンプレートタグ経由で出力を配置します。例については「使用とサポート」タブをご覧ください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:268
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:252
 msgid "Label template"
 msgstr "ラベルテンプレート"
 
-#. translators: 1: literal %s token shown as code, 2: example label shown as code
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:275
+#. translators: 1: literal %s token shown as code, 2: example label shown as
+#. code
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:259
 #, php-format
 msgid ""
 "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the "
 "label with no date."
-msgstr ""
-"日付を表示する場所に%1$sを使用してください（例：%2$s）。日付なしのラベルを表"
-"示する場合は%1$sを省略してください。"
+msgstr "日付を表示する場所に%1$sを使用してください（例：%2$s）。日付なしのラベルを表示する場合は%1$sを省略してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:284
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:268
 msgid "Date format source"
 msgstr "日付フォーマットのソース"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:287
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:271
 msgid "Use WordPress site date format"
 msgstr "WordPressサイトの日付フォーマットを使用"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:288
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:272
 msgid "Use custom date format"
 msgstr "カスタム日付フォーマットを使用"
 
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:273
+msgid "Relative (e.g. \"3 days ago\")"
+msgstr "相対（例：「3日前」）"
+
 #. translators: %s is a URL
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:294
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:279
 #, php-format
 msgid "Custom format uses PHP date format tokens. %s"
-msgstr ""
-"カスタム形式はWordPressで使用されるPHP日付フォーマットトークンを使用します。"
-"%s"
+msgstr "カスタム形式はWordPressで使用されるPHP日付フォーマットトークンを使用します。%s"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:295
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:280
 msgid "Format reference"
 msgstr "フォーマットリファレンス"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:302
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:287
 msgid "Custom date format"
 msgstr "カスタム日付フォーマット"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:305
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:290
 msgid "Only used when Date format source is set to Custom. Default: F j, Y"
-msgstr ""
-"日付フォーマットのソースがカスタムに設定されている場合のみ使用。デフォルト: "
-"F j, Y"
+msgstr "日付フォーマットのソースがカスタムに設定されている場合のみ使用。デフォルト: F j, Y"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:309
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:294
 msgid "Visibility condition"
 msgstr "表示条件"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:313
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:298
 msgid "Only show when modified date differs from publish date."
 msgstr "更新日を公開日と異なる場合のみ表示します。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:318
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:303
 msgid "Post type mode"
 msgstr "投稿タイプモード"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:321
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:306
 msgid "Show only on selected post types"
 msgstr "選択した投稿タイプのみ表示"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:322
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:307
 msgid "Show on all public post types except selected"
 msgstr "選択したものを除くすべての公開投稿タイプに表示"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:327
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:312
 msgid "Post types"
 msgstr "投稿タイプ"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:352
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:337
 msgid "Save Settings"
 msgstr "設定を保存"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:361
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:346
 msgid "Automatic Injection"
 msgstr "自動挿入"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:362
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:347
 msgid ""
 "When a placement mode other than Manual is selected, the plugin "
-"automatically injects the last-updated label into singular post/page content "
-"via the_content filter."
+"automatically injects the last-updated label into singular post/page content"
+" via the_content filter."
 msgstr ""
-"手動以外配置モードが選択されると、プラグインはthe_contentフィルター経由で"
-"singular投稿/ページコンテンツに最終更新ラベルを自動挿入します。"
+"手動以外配置モードが選択されると、プラグインはthe_contentフィルター経由でsingular投稿/ページコンテンツに最終更新ラベルを自動挿入します。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:366
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:351
 msgid "Mode"
 msgstr "モード"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:367
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:352
 msgid "Expected output position"
 msgstr " 예상される出力位置"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:371
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "Label appears below the post body."
 msgstr "ラベルは投稿本文の下に表示されます。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:372
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Label appears above the post body."
 msgstr "ラベルは投稿本文の上に表示されます。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:373
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Before and after"
 msgstr "前後"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:373
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Label appears both above and below the post body."
 msgstr "ラベルは投稿本文の上下両方に表示されます。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:374
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:461
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:446
 msgid "Manual only"
 msgstr "手動のみ"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:374
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 msgid ""
 "Nothing is injected automatically. Use the template tag below in your theme "
 "file."
-msgstr ""
-"何も自動挿入されません。テーマファイルの下のテンプレートタグを使用してくださ"
-"い。"
+msgstr "何も自動挿入されません。テーマファイルの下のテンプレートタグを使用してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:378
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:363
 msgid "Label Template"
 msgstr "ラベルテンプレート"
 
 #. translators: %s is a literal %s token placeholder shown in code
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:383
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:368
 #, php-format
 msgid ""
 "The Label template setting controls the text displayed. Use %s as the date "
 "placeholder."
-msgstr ""
-"ラベルテンプレート設定はdisplayされるテキストを制御します。日付のプレースホル"
-"ダーとして%sを使用してください。"
+msgstr "ラベルテンプレート設定はdisplayされるテキストを制御します。日付のプレースホルダーとして%sを使用してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:391
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:376
 msgid "Template setting"
 msgstr "テンプレート設定"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:392
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:377
 msgid "Example frontend output"
 msgstr "フロントエンド出力の例"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:396
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:381
 msgid "Updated March 28, 2026"
 msgstr "2026年3月28日に更新"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:397
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:382
 msgid "Last checked: March 28, 2026"
 msgstr "最終確認: 2026年3月28日"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:398
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:383
 msgid "Fresh content  (no date appended — displayed as-is)"
 msgstr "新鮮なコンテンツ（日付なし — そのまま表示）"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:402
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:387
 msgid "Template Tags"
 msgstr "テンプレートタグ"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:403
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:388
 msgid ""
 "Use these PHP functions anywhere in your theme when placement is set to "
 "Manual."
-msgstr ""
-"配置が手動に設定されている場合、テーマ内のどこにでもこれらのPHP関数を使用でき"
-"ます。"
+msgstr "配置が手動に設定されている場合、テーマ内のどこにでもこれらのPHP関数を使用できます。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:406
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:391
 msgid ""
 "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
-msgstr ""
-"レンダリングされたHTMLを直接エコーします。Loop内または投稿IDを渡して使用して"
-"ください。"
+msgstr "レンダリングされたHTMLを直接エコーします。Loop内または投稿IDを渡して使用してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:409
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:394
 msgid "Expected HTML output:"
 msgstr "预期されるHTML出力："
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:398
 msgid ""
 "Returns the rendered HTML string instead of echoing. Useful for further "
 "manipulation."
-msgstr ""
-"エコーする代わりにレンダリングされたHTML文字列を返します。さらなる操作に便利"
-"です。"
+msgstr "エコーする代わりにレンダリングされたHTML文字列を返します。さらなる操作に便利です。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:417
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:402
 msgid "Date Format Reference"
 msgstr "日付フォーマットリファレンス"
 
 #. translators: %s is a URL
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:422
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:407
 #, php-format
 msgid ""
 "When using a custom date format, the same PHP date tokens used by WordPress "
 "apply. %s"
-msgstr ""
-"カスタム日付フォーマットを使用する場合、WordPressで使用される同じPHP日付トー"
-"クンが適用されます。%s"
+msgstr "カスタム日付フォーマットを使用する場合、WordPressで使用される同じPHP日付トークンが適用されます。%s"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:423
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:408
 msgid "View full format reference &rarr;"
 msgstr "完全なフォーマットリファレンスを見る &rarr;"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:428
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Token"
 msgstr "トークン"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:428
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Example output"
 msgstr "出力例"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:430
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:415
 msgid "March 28, 2026"
 msgstr "2026年3月28日"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:431
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:416
 msgid "28/03/2026"
 msgstr "2026/03/28"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:432
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:417
 msgid "2026-03-28"
 msgstr "2026-03-28"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:433
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:418
 msgid "28 Mar 2026"
 msgstr "2026年3月28日"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:437
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:422
 msgid "Frequently Asked Questions"
 msgstr "よくある質問"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:439
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:424
 msgid "The label is not appearing on my posts."
 msgstr "ラベルが投稿に表示されません。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:441
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:426
 msgid "Check that Enable output is ticked on the Settings tab."
 msgstr "設定タブで出力を有効화가チェックされていることを確認してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:442
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:427
 msgid ""
 "Check that the post type (e.g. Post, Page) is selected in the Post types "
 "list."
-msgstr ""
-"投稿タイプリストで投稿タイプ（例：投稿、固定ページ）が選択されていることを確"
-"認してください。"
+msgstr "投稿タイプリストで投稿タイプ（例：投稿、固定ページ）が選択されていることを確認してください。"
 
 #. translators: %s is a setting name
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:447
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:432
 #, php-format
 msgid ""
 "If %s is ticked, the label will only show when the article has been edited "
 "after its original publish date."
-msgstr ""
-"%sがチェックされている場合、ラベルは記事が元の公開日後に編集されたときのみ表"
-"示されます。"
+msgstr "%sがチェックされている場合、ラベルは記事が元の公開日後に編集されたときのみ表示されます。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:448
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:433
 msgid "Only show when modified date differs from publish date"
 msgstr "更新日を公開日と異なる場合のみ表示"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:452
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:437
 msgid ""
-"If Automatic placement is set to Manual, nothing is injected automatically — "
-"add the template tag to your theme."
-msgstr ""
-"自動配置が手に設定されている場合、何も自動挿入されません — テーマテンプレート"
-"タグを追加してください。"
+"If Automatic placement is set to Manual, nothing is injected automatically —"
+" add the template tag to your theme."
+msgstr "自動配置が手に設定されている場合、何も自動挿入されません — テーマテンプレートタグを追加してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:455
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:440
 msgid "How do I place the label exactly where I want it?"
 msgstr "ラベルを好きな場所に配置するにはどうすればいいですか？"
 
 #. translators: %1$s and %2$s are setting/function names
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:460
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:445
 #, php-format
 msgid ""
 "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your "
 "theme template wherever you want it to appear."
-msgstr ""
-"設定タブで自動配置を%1$sに設定し、ラベルを表示したいテーマテンプレートの場所"
-"に%2$sを追加してください。"
+msgstr "設定タブで自動配置を%1$sに設定し、ラベルを表示したいテーマテンプレートの場所に%2$sを追加してください。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:467
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:452
 msgid "Can I show just a static label with no date?"
 msgstr "日付なしの静的なラベルのみを表示できますか？"
 
 #. translators: %s is a literal %s placeholder shown in code
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:472
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:457
 #, php-format
 msgid ""
 "Yes. Remove %s from the Label template. The text will be output as-is with "
 "no date appended."
-msgstr ""
-"はい。ラベルテンプレートから%sを削除してください。テキストはそのまま出力さ"
-"れ、日付は追加されません。"
+msgstr "はい。ラベルテンプレートから%sを削除してください。テキストはそのまま出力され、日付は追加されません。"
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:479
+#. translators: %s is the URL to the plugin support forum on WordPress.org.
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:468
+#, php-format
 msgid ""
-"If you need help with setup, have found a bug, or want to request a feature, "
-"get in touch."
+"Need a hand? Visit the <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">plugin support forum on WordPress.org</a> for help, bug reports"
+" and feature requests."
 msgstr ""
-"設定のヘルプが必要であれば、バグを見つけた場合、または機能をリクエストしたい"
-"場合は、お問い合わせください。"
+"お困りですか？ヘルプ、バグ報告、機能リクエストについては、<a href=\"%s\" target=\"_blank\" rel=\"noopener"
+" noreferrer\">WordPress.orgのプラグインサポートフォーラム</a>をご覧ください。"
 
-#~ msgid "Upgrade to Pro"
-#~ msgstr "Proにアップグレード"
+#: includes/class-micro-site-care-post-last-updated-date.php:167
+msgid ""
+"Enjoying MSC: Post Last Updated Date? A quick review would really help other"
+" WordPress users find it."
+msgstr ""
+"MSC: "
+"投稿の最終更新日をお楽しみいただけていますか？簡単なレビューをいただけると、他のWordPressユーザーがこのプラグインを見つけるのに大いに役立ちます。"
 
-#~ msgid "Unlock powerful extras:"
-#~ msgstr "強力な機能をロック解除："
+#: includes/class-micro-site-care-post-last-updated-date.php:168
+msgid "Leave a review"
+msgstr "レビューを残す"
 
-#~ msgid "Relative dates (e.g. \"3 days ago\")"
-#~ msgstr "相対日付（例：「3日前」）"
-
-#~ msgid "Hybrid mode — relative then absolute"
-#~ msgstr "ハイブリッドモード — 相対的然后絶対的"
-
-#~ msgid "Style presets (muted, pill, badge)"
-#~ msgstr "スタイルプリセット（ミュート、ピル、バッジ）"
-
-#~ msgid "Per-post override (show/hide/global)"
-#~ msgstr "投稿ごとのoverride（表示/非表示/グローバル）"
-
-#~ msgid "Shortcode with per-instance overrides"
-#~ msgstr "インスタンスごとのoverrideを持つショートコード"
-
-#~ msgid "View Pro Features"
-#~ msgstr "Pro機能を見る"
+#: includes/class-micro-site-care-post-last-updated-date.php:170
+msgid "No thanks"
+msgstr "いいえ、結構です"

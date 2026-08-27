@@ -1,27 +1,23 @@
-# Brazilian Portuguese translation for Micro Site Care: Post Last Updated Date.
-# Copyright (C) 2026 Anomalous Developers
-# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
-# Anomalous Developers <support@anomalous.co.za>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MSC: Post Last Updated Date 1.6.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date\n"
 "POT-Creation-Date: 2026-08-27T15:26:32+00:00\n"
-"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-08-27 00:00+0000\n"
 "Last-Translator: Anomalous Developers <dev@anomalous.com.au>\n"
 "Language-Team: Anomalous Developers <dev@anomalous.com.au>\n"
-"Language: pt_BR\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Domain: micro-site-care-post-last-updated-date\n"
 
 #. Plugin Name of the plugin
 #: micro-site-care-post-last-updated-date.php
 msgid "MSC: Post Last Updated Date"
-msgstr "MSC: Data da última atualização do artigo"
+msgstr "MSC：文章最后更新日期"
 
 #. Plugin URI of the plugin
 #: micro-site-care-post-last-updated-date.php
@@ -31,9 +27,7 @@ msgstr "https://github.com/djm56/msc-last-updated"
 #. Description of the plugin
 #: micro-site-care-post-last-updated-date.php
 msgid "Display and control the post last-updated date in flexible positions."
-msgstr ""
-"Exiba e controle a data da última atualização dos posts em posições "
-"flexíveis."
+msgstr "在灵活的位置显示和控制文章最后更新日期。"
 
 #. Author of the plugin
 #: micro-site-care-post-last-updated-date.php
@@ -49,7 +43,7 @@ msgstr "https://anomalous.co.za"
 #: includes/class-micro-site-care-post-last-updated-date-module.php:122
 #, php-format
 msgid "%s ago"
-msgstr "há %s"
+msgstr "%s前"
 
 #. translators: %s is the formatted post last-updated date.
 #: includes/class-micro-site-care-post-last-updated-date-module.php:133
@@ -59,76 +53,74 @@ msgstr "há %s"
 #: includes/class-micro-site-care-post-last-updated-date.php:204
 #, php-format
 msgid "Updated %s"
-msgstr "Atualizado %s"
+msgstr "更新于 %s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:44
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:45
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:204
 msgid "MSC Post Last Updated Date"
-msgstr "MSC Data da Última Atualização"
+msgstr "MSC 文章最后更新日期"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:87
 msgid "You do not have permission to access this page."
-msgstr "Você não tem permissão para acessar esta página."
+msgstr "您没有权限访问此页面。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:93
 msgid "Security check failed. Please try again."
-msgstr "Verificação de segurança falhou. Tente novamente."
+msgstr "安全检查失败。请重试。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:208
 msgid "Settings saved."
-msgstr "Configurações salvas."
+msgstr "设置已保存。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:213
 msgid "Settings"
-msgstr "Configurações"
+msgstr "设置"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:216
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:463
 msgid "Support"
-msgstr "Suporte"
+msgstr "支持"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:231
 msgid "Enable output"
-msgstr "Ativar saída"
+msgstr "启用输出"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:235
 msgid "Show Last Updated date on enabled post types."
-msgstr "Mostrar a data da última atualização nos tipos de post habilitados."
+msgstr "在已启用的文章类型上显示最后更新日期。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:240
 msgid "Automatic placement"
-msgstr "Posicionamento automático"
+msgstr "自动放置"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:243
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "After content"
-msgstr "Após o conteúdo"
+msgstr "内容之后"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:244
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Before content"
-msgstr "Antes do conteúdo"
+msgstr "内容之前"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:245
 msgid "Before and after content"
-msgstr "Antes e após o conteúdo"
+msgstr "内容之前和之后"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:246
 msgid "Manual only (template tag)"
-msgstr "Somente manual (tag de template)"
+msgstr "仅手动（模板标签）"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:248
 msgid ""
 "Use Manual to place output via the template tag in your theme. See the Usage"
 " tab for examples."
-msgstr ""
-"Use Somente manual para posicionar a saída via tag de template no seu tema. "
-"Consulte a aba Uso e Suporte para exemplos."
+msgstr "使用“仅手动”通过模板标签在您的主题中放置输出。示例请参见“使用”选项卡。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:252
 msgid "Label template"
-msgstr "Modelo do rótulo"
+msgstr "标签模板"
 
 #. translators: 1: literal %s token shown as code, 2: example label shown as
 #. code
@@ -137,129 +129,119 @@ msgstr "Modelo do rótulo"
 msgid ""
 "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the "
 "label with no date."
-msgstr ""
-"Use %1$s onde a data deve aparecer, ex.: %2$s. Omita %1$s para exibir o "
-"rótulo sem data."
+msgstr "在日期应显示的位置使用 %1$s，例如 %2$s。省略 %1$s 可显示不带日期的标签。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:268
 msgid "Date format source"
-msgstr "Fonte do formato de data"
+msgstr "日期格式来源"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:271
 msgid "Use WordPress site date format"
-msgstr "Usar o formato de data do site WordPress"
+msgstr "使用 WordPress 站点日期格式"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:272
 msgid "Use custom date format"
-msgstr "Usar formato de data personalizado"
+msgstr "使用自定义日期格式"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:273
 msgid "Relative (e.g. \"3 days ago\")"
-msgstr "Relativo (ex.: “há 3 dias”)"
+msgstr "相对时间（例如“3天前”）"
 
 #. translators: %s is a URL
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:279
 #, php-format
 msgid "Custom format uses PHP date format tokens. %s"
-msgstr "O formato personalizado usa os tokens de data PHP do WordPress. %s"
+msgstr "自定义格式使用 PHP 日期格式标记。%s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:280
 msgid "Format reference"
-msgstr "Referência de formato"
+msgstr "格式参考"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:287
 msgid "Custom date format"
-msgstr "Formato de data personalizado"
+msgstr "自定义日期格式"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:290
 msgid "Only used when Date format source is set to Custom. Default: F j, Y"
-msgstr ""
-"Usado apenas quando a Fonte do formato de data está definida como "
-"Personalizado. Padrão: F j, Y"
+msgstr "仅在日期格式来源设为“自定义”时使用。默认值：F j, Y"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:294
 msgid "Visibility condition"
-msgstr "Condição de visibilidade"
+msgstr "显示条件"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:298
 msgid "Only show when modified date differs from publish date."
-msgstr ""
-"Mostrar somente quando a data de modificação diferir da data de publicação."
+msgstr "仅在修改日期与发布日期不同时显示。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:303
 msgid "Post type mode"
-msgstr "Modo de tipo de post"
+msgstr "文章类型模式"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:306
 msgid "Show only on selected post types"
-msgstr "Mostrar somente nos tipos de post selecionados"
+msgstr "仅在选定的文章类型上显示"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:307
 msgid "Show on all public post types except selected"
-msgstr "Mostrar em todos os tipos de post públicos, exceto os selecionados"
+msgstr "在除选定类型外的所有公开文章类型上显示"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:312
 msgid "Post types"
-msgstr "Tipos de post"
+msgstr "文章类型"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:337
 msgid "Save Settings"
-msgstr "Salvar configurações"
+msgstr "保存设置"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:346
 msgid "Automatic Injection"
-msgstr "Injeção automática"
+msgstr "自动注入"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:347
 msgid ""
 "When a placement mode other than Manual is selected, the plugin "
 "automatically injects the last-updated label into singular post/page content"
 " via the_content filter."
-msgstr ""
-"Quando um modo de posicionamento diferente de Somente manual é selecionado, "
-"o plugin injeta automaticamente o rótulo de última atualização no conteúdo "
-"singular de post/página via o filtro the_content."
+msgstr "当选择非“仅手动”的放置模式时，插件会通过 the_content 过滤器自动将最后更新标签注入到单篇文章/页面内容中。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:351
 msgid "Mode"
-msgstr "Modo"
+msgstr "模式"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:352
 msgid "Expected output position"
-msgstr "Posição de saída esperada"
+msgstr "预期输出位置"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "Label appears below the post body."
-msgstr "O rótulo aparece abaixo do corpo do post."
+msgstr "标签显示在文章正文下方。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Label appears above the post body."
-msgstr "O rótulo aparece acima do corpo do post."
+msgstr "标签显示在文章正文上方。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Before and after"
-msgstr "Antes e depois"
+msgstr "之前和之后"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Label appears both above and below the post body."
-msgstr "O rótulo aparece tanto acima quanto abaixo do corpo do post."
+msgstr "标签同时显示在文章正文的上方和下方。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:446
 msgid "Manual only"
-msgstr "Somente manual"
+msgstr "仅手动"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 msgid ""
 "Nothing is injected automatically. Use the template tag below in your theme "
 "file."
-msgstr ""
-"Nada é injetado automaticamente. Use a tag de template abaixo no seu arquivo"
-" de tema."
+msgstr "不会自动注入任何内容。请在您的主题文件中使用下方的模板标签。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:363
 msgid "Label Template"
-msgstr "Modelo do rótulo"
+msgstr "标签模板"
 
 #. translators: %s is a literal %s token placeholder shown in code
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:368
@@ -267,64 +249,56 @@ msgstr "Modelo do rótulo"
 msgid ""
 "The Label template setting controls the text displayed. Use %s as the date "
 "placeholder."
-msgstr ""
-"A configuração Modelo do rótulo controla o texto exibido. Use %s como "
-"marcador de posição da data."
+msgstr "标签模板设置控制显示的文本。使用 %s 作为日期占位符。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:376
 msgid "Template setting"
-msgstr "Configuração do modelo"
+msgstr "模板设置"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:377
 msgid "Example frontend output"
-msgstr "Exemplo de saída no frontend"
+msgstr "前端输出示例"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:381
 msgid "Updated March 28, 2026"
-msgstr "Atualizado em 28 de março de 2026"
+msgstr "更新于 2026年3月28日"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:382
 msgid "Last checked: March 28, 2026"
-msgstr "Última verificação: 28 de março de 2026"
+msgstr "最后检查：2026年3月28日"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:383
 msgid "Fresh content  (no date appended — displayed as-is)"
-msgstr "Conteúdo em dia  (sem data anexada — exibido como está)"
+msgstr "新鲜内容（无附加日期 — 按原样显示）"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:387
 msgid "Template Tags"
-msgstr "Tags de template"
+msgstr "模板标签"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:388
 msgid ""
 "Use these PHP functions anywhere in your theme when placement is set to "
 "Manual."
-msgstr ""
-"Use estas funções PHP em qualquer lugar do seu tema quando o posicionamento "
-"for Somente manual."
+msgstr "当放置设置为手动时，可在主题中的任何位置使用这些 PHP 函数。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:391
 msgid ""
 "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
-msgstr ""
-"Ecoa o HTML renderizado diretamente. Use dentro do Loop ou passe um ID de "
-"post."
+msgstr "直接输出渲染的 HTML。在循环内使用或传入文章 ID。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:394
 msgid "Expected HTML output:"
-msgstr "Saída HTML esperada:"
+msgstr "预期 HTML 输出："
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:398
 msgid ""
 "Returns the rendered HTML string instead of echoing. Useful for further "
 "manipulation."
-msgstr ""
-"Retorna a string HTML renderizada em vez de ecoá-la. Útil para manipulação "
-"adicional."
+msgstr "返回渲染的 HTML 字符串而非直接输出。适用于进一步处理。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:402
 msgid "Date Format Reference"
-msgstr "Referência de formato de data"
+msgstr "日期格式参考"
 
 #. translators: %s is a URL
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:407
@@ -332,25 +306,23 @@ msgstr "Referência de formato de data"
 msgid ""
 "When using a custom date format, the same PHP date tokens used by WordPress "
 "apply. %s"
-msgstr ""
-"Ao usar um formato de data personalizado, os mesmos tokens de data PHP "
-"usados pelo WordPress se aplicam. %s"
+msgstr "使用自定义日期格式时，适用 WordPress 使用的相同 PHP 日期标记。%s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:408
 msgid "View full format reference &rarr;"
-msgstr "Ver referência completa de formato &rarr;"
+msgstr "查看完整格式参考 &rarr;"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Token"
-msgstr "Token"
+msgstr "标记"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Example output"
-msgstr "Exemplo de saída"
+msgstr "示例输出"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:415
 msgid "March 28, 2026"
-msgstr "28 de março de 2026"
+msgstr "2026年3月28日"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:416
 msgid "28/03/2026"
@@ -362,27 +334,25 @@ msgstr "2026-03-28"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:418
 msgid "28 Mar 2026"
-msgstr "28 mar 2026"
+msgstr "2026年3月28日"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:422
 msgid "Frequently Asked Questions"
-msgstr "Perguntas Frequentes"
+msgstr "常见问题"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:424
 msgid "The label is not appearing on my posts."
-msgstr "O rótulo não está aparecendo nos meus posts."
+msgstr "标签未显示在我的文章上。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:426
 msgid "Check that Enable output is ticked on the Settings tab."
-msgstr "Verifique se Ativar saída está marcado na aba Configurações."
+msgstr "检查“设置”选项卡上是否勾选了“启用输出”。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:427
 msgid ""
 "Check that the post type (e.g. Post, Page) is selected in the Post types "
 "list."
-msgstr ""
-"Verifique se o tipo de post (ex.: Post, Página) está selecionado na lista de"
-" Tipos de post."
+msgstr "检查“文章类型”列表中是否选择了文章类型（例如文章、页面）。"
 
 #. translators: %s is a setting name
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:432
@@ -390,26 +360,21 @@ msgstr ""
 msgid ""
 "If %s is ticked, the label will only show when the article has been edited "
 "after its original publish date."
-msgstr ""
-"Se %s estiver marcado, o rótulo só será exibido quando o artigo tiver sido "
-"editado após sua data de publicação original."
+msgstr "如果勾选了 %s，则标签仅在文章于原始发布日期之后被编辑时才会显示。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:433
 msgid "Only show when modified date differs from publish date"
-msgstr ""
-"Mostrar somente quando a data de modificação diferir da data de publicação"
+msgstr "仅在修改日期与发布日期不同时显示"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:437
 msgid ""
 "If Automatic placement is set to Manual, nothing is injected automatically —"
 " add the template tag to your theme."
-msgstr ""
-"Se Posicionamento automático estiver definido como Somente manual, nada é "
-"injetado automaticamente — adicione a tag de template ao seu tema."
+msgstr "如果自动放置设为“手动”，则不会自动注入任何内容 — 请将模板标签添加到您的主题中。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:440
 msgid "How do I place the label exactly where I want it?"
-msgstr "Como posiciono o rótulo exatamente onde quero?"
+msgstr "如何将标签放置在我想要的确切位置？"
 
 #. translators: %1$s and %2$s are setting/function names
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:445
@@ -417,13 +382,11 @@ msgstr "Como posiciono o rótulo exatamente onde quero?"
 msgid ""
 "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your "
 "theme template wherever you want it to appear."
-msgstr ""
-"Defina Posicionamento automático como %1$s na aba Configurações e adicione "
-"%2$s no template do seu tema onde desejar que o rótulo apareça."
+msgstr "在“设置”选项卡上将自动放置设为 %1$s，然后在您的主题模板中想要显示的位置添加 %2$s。"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:452
 msgid "Can I show just a static label with no date?"
-msgstr "Posso mostrar apenas um rótulo estático sem data?"
+msgstr "我可以只显示不带日期的静态标签吗？"
 
 #. translators: %s is a literal %s placeholder shown in code
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:457
@@ -431,9 +394,7 @@ msgstr "Posso mostrar apenas um rótulo estático sem data?"
 msgid ""
 "Yes. Remove %s from the Label template. The text will be output as-is with "
 "no date appended."
-msgstr ""
-"Sim. Remova %s do Modelo do rótulo. O texto será exibido como está, sem data"
-" anexada."
+msgstr "可以。从标签模板中移除 %s。文本将按原样输出，不带附加日期。"
 
 #. translators: %s is the URL to the plugin support forum on WordPress.org.
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:468
@@ -443,22 +404,19 @@ msgid ""
 "noreferrer\">plugin support forum on WordPress.org</a> for help, bug reports"
 " and feature requests."
 msgstr ""
-"Precisa de ajuda? Visite o <a href=\"%s\" target=\"_blank\" rel=\"noopener "
-"noreferrer\">fórum de suporte do plugin no WordPress.org</a> para ajuda, "
-"relatórios de bugs e pedidos de funcionalidades."
+"需要帮助？请访问 <a href=\"%s\" target=\"_blank\" rel=\"noopener "
+"noreferrer\">WordPress.org 上的插件支持论坛</a>获取帮助、报告错误和请求功能。"
 
 #: includes/class-micro-site-care-post-last-updated-date.php:167
 msgid ""
 "Enjoying MSC: Post Last Updated Date? A quick review would really help other"
 " WordPress users find it."
-msgstr ""
-"Gostando de MSC: Data da última atualização do artigo? Uma rápida avaliação "
-"ajudaria muito outros usuários do WordPress a encontrá-lo."
+msgstr "喜欢 MSC：文章最后更新日期吗？一个简短的评论将真正帮助其他 WordPress 用户找到它。"
 
 #: includes/class-micro-site-care-post-last-updated-date.php:168
 msgid "Leave a review"
-msgstr "Deixar uma avaliação"
+msgstr "留下评论"
 
 #: includes/class-micro-site-care-post-last-updated-date.php:170
 msgid "No thanks"
-msgstr "Não, obrigado"
+msgstr "不了，谢谢"

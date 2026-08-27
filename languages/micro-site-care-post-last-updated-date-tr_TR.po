@@ -1,17 +1,13 @@
-# Brazilian Portuguese translation for Micro Site Care: Post Last Updated Date.
-# Copyright (C) 2026 Anomalous Developers
-# This file is distributed under the same license as the Micro Site Care: Post Last Updated Date plugin.
-# Anomalous Developers <support@anomalous.co.za>, 2026.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: MSC: Post Last Updated Date 1.6.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date\n"
 "POT-Creation-Date: 2026-08-27T15:26:32+00:00\n"
-"PO-Revision-Date: 2026-03-28 00:00+0000\n"
+"PO-Revision-Date: 2026-08-27 00:00+0000\n"
 "Last-Translator: Anomalous Developers <dev@anomalous.com.au>\n"
 "Language-Team: Anomalous Developers <dev@anomalous.com.au>\n"
-"Language: pt_BR\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +17,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: micro-site-care-post-last-updated-date.php
 msgid "MSC: Post Last Updated Date"
-msgstr "MSC: Data da última atualização do artigo"
+msgstr "MSC: Yazı Son Güncelleme Tarihi"
 
 #. Plugin URI of the plugin
 #: micro-site-care-post-last-updated-date.php
@@ -32,8 +28,8 @@ msgstr "https://github.com/djm56/msc-last-updated"
 #: micro-site-care-post-last-updated-date.php
 msgid "Display and control the post last-updated date in flexible positions."
 msgstr ""
-"Exiba e controle a data da última atualização dos posts em posições "
-"flexíveis."
+"Yazının son güncelleme tarihini esnek konumlarda görüntüleyin ve kontrol "
+"edin."
 
 #. Author of the plugin
 #: micro-site-care-post-last-updated-date.php
@@ -49,7 +45,7 @@ msgstr "https://anomalous.co.za"
 #: includes/class-micro-site-care-post-last-updated-date-module.php:122
 #, php-format
 msgid "%s ago"
-msgstr "há %s"
+msgstr "%s önce"
 
 #. translators: %s is the formatted post last-updated date.
 #: includes/class-micro-site-care-post-last-updated-date-module.php:133
@@ -59,76 +55,76 @@ msgstr "há %s"
 #: includes/class-micro-site-care-post-last-updated-date.php:204
 #, php-format
 msgid "Updated %s"
-msgstr "Atualizado %s"
+msgstr "Güncellendi %s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:44
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:45
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:204
 msgid "MSC Post Last Updated Date"
-msgstr "MSC Data da Última Atualização"
+msgstr "MSC Yazı Son Güncelleme Tarihi"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:87
 msgid "You do not have permission to access this page."
-msgstr "Você não tem permissão para acessar esta página."
+msgstr "Bu sayfaya erişim izniniz yok."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:93
 msgid "Security check failed. Please try again."
-msgstr "Verificação de segurança falhou. Tente novamente."
+msgstr "Güvenlik kontrolü başarısız oldu. Lütfen tekrar deneyin."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:208
 msgid "Settings saved."
-msgstr "Configurações salvas."
+msgstr "Ayarlar kaydedildi."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:213
 msgid "Settings"
-msgstr "Configurações"
+msgstr "Ayarlar"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:216
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:463
 msgid "Support"
-msgstr "Suporte"
+msgstr "Destek"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:231
 msgid "Enable output"
-msgstr "Ativar saída"
+msgstr "Çıktıyı etkinleştir"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:235
 msgid "Show Last Updated date on enabled post types."
-msgstr "Mostrar a data da última atualização nos tipos de post habilitados."
+msgstr "Etkin yazı tiplerinde son güncelleme tarihini göster."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:240
 msgid "Automatic placement"
-msgstr "Posicionamento automático"
+msgstr "Otomatik yerleştirme"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:243
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "After content"
-msgstr "Após o conteúdo"
+msgstr "İçerikten sonra"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:244
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Before content"
-msgstr "Antes do conteúdo"
+msgstr "İçerikten önce"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:245
 msgid "Before and after content"
-msgstr "Antes e após o conteúdo"
+msgstr "İçerikten önce ve sonra"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:246
 msgid "Manual only (template tag)"
-msgstr "Somente manual (tag de template)"
+msgstr "Sadece manuel (şablon etiketi)"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:248
 msgid ""
 "Use Manual to place output via the template tag in your theme. See the Usage"
 " tab for examples."
 msgstr ""
-"Use Somente manual para posicionar a saída via tag de template no seu tema. "
-"Consulte a aba Uso e Suporte para exemplos."
+"Çıktıyı temanızdaki şablon etiketi aracılığıyla yerleştirmek için Manuel "
+"seçeneğini kullanın. Örnekler için Kullanım sekmesine bakın."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:252
 msgid "Label template"
-msgstr "Modelo do rótulo"
+msgstr "Etiket şablonu"
 
 #. translators: 1: literal %s token shown as code, 2: example label shown as
 #. code
@@ -138,77 +134,76 @@ msgid ""
 "Use %1$s where the date should appear, e.g. %2$s. Omit %1$s to show the "
 "label with no date."
 msgstr ""
-"Use %1$s onde a data deve aparecer, ex.: %2$s. Omita %1$s para exibir o "
-"rótulo sem data."
+"Tarihin görünmesi gereken yerde %1$s kullanın, örn. %2$s. Etiketi tarihsiz "
+"göstermek için %1$s'i çıkarın."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:268
 msgid "Date format source"
-msgstr "Fonte do formato de data"
+msgstr "Tarih formatı kaynağı"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:271
 msgid "Use WordPress site date format"
-msgstr "Usar o formato de data do site WordPress"
+msgstr "WordPress site tarih formatını kullan"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:272
 msgid "Use custom date format"
-msgstr "Usar formato de data personalizado"
+msgstr "Özel tarih formatı kullan"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:273
 msgid "Relative (e.g. \"3 days ago\")"
-msgstr "Relativo (ex.: “há 3 dias”)"
+msgstr "Göreli (örn. \"3 gün önce\")"
 
 #. translators: %s is a URL
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:279
 #, php-format
 msgid "Custom format uses PHP date format tokens. %s"
-msgstr "O formato personalizado usa os tokens de data PHP do WordPress. %s"
+msgstr "Özel format PHP tarih formatı belirteçlerini kullanır. %s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:280
 msgid "Format reference"
-msgstr "Referência de formato"
+msgstr "Format referansı"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:287
 msgid "Custom date format"
-msgstr "Formato de data personalizado"
+msgstr "Özel tarih formatı"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:290
 msgid "Only used when Date format source is set to Custom. Default: F j, Y"
 msgstr ""
-"Usado apenas quando a Fonte do formato de data está definida como "
-"Personalizado. Padrão: F j, Y"
+"Yalnızca Tarih formatı kaynağı Özel olarak ayarlandığında kullanılır. "
+"Varsayılan: F j, Y"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:294
 msgid "Visibility condition"
-msgstr "Condição de visibilidade"
+msgstr "Görünürlük koşulu"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:298
 msgid "Only show when modified date differs from publish date."
-msgstr ""
-"Mostrar somente quando a data de modificação diferir da data de publicação."
+msgstr "Yalnızca değiştirilme tarihi yayın tarihinden farklıysa göster."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:303
 msgid "Post type mode"
-msgstr "Modo de tipo de post"
+msgstr "Yazı tipi modu"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:306
 msgid "Show only on selected post types"
-msgstr "Mostrar somente nos tipos de post selecionados"
+msgstr "Yalnızca seçili yazı tiplerinde göster"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:307
 msgid "Show on all public post types except selected"
-msgstr "Mostrar em todos os tipos de post públicos, exceto os selecionados"
+msgstr "Seçilenler dışındaki tüm herkese açık yazı tiplerinde göster"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:312
 msgid "Post types"
-msgstr "Tipos de post"
+msgstr "Yazı tipleri"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:337
 msgid "Save Settings"
-msgstr "Salvar configurações"
+msgstr "Ayarları Kaydet"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:346
 msgid "Automatic Injection"
-msgstr "Injeção automática"
+msgstr "Otomatik Enjeksiyon"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:347
 msgid ""
@@ -216,50 +211,50 @@ msgid ""
 "automatically injects the last-updated label into singular post/page content"
 " via the_content filter."
 msgstr ""
-"Quando um modo de posicionamento diferente de Somente manual é selecionado, "
-"o plugin injeta automaticamente o rótulo de última atualização no conteúdo "
-"singular de post/página via o filtro the_content."
+"Manuel dışında bir yerleştirme modu seçildiğinde, eklenti the_content "
+"filtresi aracılığıyla son güncelleme etiketini tekil yazı/sayfa içeriğine "
+"otomatik olarak enjekte eder."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:351
 msgid "Mode"
-msgstr "Modo"
+msgstr "Mod"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:352
 msgid "Expected output position"
-msgstr "Posição de saída esperada"
+msgstr "Beklenen çıktı konumu"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:356
 msgid "Label appears below the post body."
-msgstr "O rótulo aparece abaixo do corpo do post."
+msgstr "Etiket yazı gövdesinin altında görünür."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Label appears above the post body."
-msgstr "O rótulo aparece acima do corpo do post."
+msgstr "Etiket yazı gövdesinin üstünde görünür."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Before and after"
-msgstr "Antes e depois"
+msgstr "Önce ve sonra"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Label appears both above and below the post body."
-msgstr "O rótulo aparece tanto acima quanto abaixo do corpo do post."
+msgstr "Etiket hem yazı gövdesinin üstünde hem de altında görünür."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:446
 msgid "Manual only"
-msgstr "Somente manual"
+msgstr "Sadece manuel"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 msgid ""
 "Nothing is injected automatically. Use the template tag below in your theme "
 "file."
 msgstr ""
-"Nada é injetado automaticamente. Use a tag de template abaixo no seu arquivo"
-" de tema."
+"Hiçbir şey otomatik olarak enjekte edilmez. Tema dosyanızda aşağıdaki şablon"
+" etiketini kullanın."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:363
 msgid "Label Template"
-msgstr "Modelo do rótulo"
+msgstr "Etiket Şablonu"
 
 #. translators: %s is a literal %s token placeholder shown in code
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:368
@@ -268,63 +263,63 @@ msgid ""
 "The Label template setting controls the text displayed. Use %s as the date "
 "placeholder."
 msgstr ""
-"A configuração Modelo do rótulo controla o texto exibido. Use %s como "
-"marcador de posição da data."
+"Etiket şablonu ayarı, görüntülenen metni kontrol eder. Tarih yer tutucusu "
+"olarak %s kullanın."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:376
 msgid "Template setting"
-msgstr "Configuração do modelo"
+msgstr "Şablon ayarı"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:377
 msgid "Example frontend output"
-msgstr "Exemplo de saída no frontend"
+msgstr "Ön yüz çıktı örneği"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:381
 msgid "Updated March 28, 2026"
-msgstr "Atualizado em 28 de março de 2026"
+msgstr "28 Mart 2026 tarihinde güncellendi"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:382
 msgid "Last checked: March 28, 2026"
-msgstr "Última verificação: 28 de março de 2026"
+msgstr "Son kontrol: 28 Mart 2026"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:383
 msgid "Fresh content  (no date appended — displayed as-is)"
-msgstr "Conteúdo em dia  (sem data anexada — exibido como está)"
+msgstr "Taze içerik (tarih eklenmedi — olduğu gibi görüntülenir)"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:387
 msgid "Template Tags"
-msgstr "Tags de template"
+msgstr "Şablon Etiketleri"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:388
 msgid ""
 "Use these PHP functions anywhere in your theme when placement is set to "
 "Manual."
 msgstr ""
-"Use estas funções PHP em qualquer lugar do seu tema quando o posicionamento "
-"for Somente manual."
+"Yerleştirme Manuel olarak ayarlandığında bu PHP fonksiyonlarını temanızın "
+"herhangi bir yerinde kullanın."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:391
 msgid ""
 "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
 msgstr ""
-"Ecoa o HTML renderizado diretamente. Use dentro do Loop ou passe um ID de "
-"post."
+"Oluşturulan HTML'i doğrudan yazdırır. The Loop içinde kullanın veya bir yazı"
+" ID'si geçirin."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:394
 msgid "Expected HTML output:"
-msgstr "Saída HTML esperada:"
+msgstr "Beklenen HTML çıktısı:"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:398
 msgid ""
 "Returns the rendered HTML string instead of echoing. Useful for further "
 "manipulation."
 msgstr ""
-"Retorna a string HTML renderizada em vez de ecoá-la. Útil para manipulação "
-"adicional."
+"Oluşturulan HTML dizesini yazdırmak yerine döndürür. Daha fazla işlem için "
+"kullanışlıdır."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:402
 msgid "Date Format Reference"
-msgstr "Referência de formato de data"
+msgstr "Tarih Formatı Referansı"
 
 #. translators: %s is a URL
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:407
@@ -333,24 +328,24 @@ msgid ""
 "When using a custom date format, the same PHP date tokens used by WordPress "
 "apply. %s"
 msgstr ""
-"Ao usar um formato de data personalizado, os mesmos tokens de data PHP "
-"usados pelo WordPress se aplicam. %s"
+"Özel bir tarih formatı kullanıldığında, WordPress tarafından kullanılan aynı"
+" PHP tarih belirteçleri geçerlidir. %s"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:408
 msgid "View full format reference &rarr;"
-msgstr "Ver referência completa de formato &rarr;"
+msgstr "Tam format referansını görüntüle &rarr;"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Token"
-msgstr "Token"
+msgstr "Belirteç"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:413
 msgid "Example output"
-msgstr "Exemplo de saída"
+msgstr "Örnek çıktı"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:415
 msgid "March 28, 2026"
-msgstr "28 de março de 2026"
+msgstr "28 Mart 2026"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:416
 msgid "28/03/2026"
@@ -362,27 +357,29 @@ msgstr "2026-03-28"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:418
 msgid "28 Mar 2026"
-msgstr "28 mar 2026"
+msgstr "28 Mar 2026"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:422
 msgid "Frequently Asked Questions"
-msgstr "Perguntas Frequentes"
+msgstr "Sıkça Sorulan Sorular"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:424
 msgid "The label is not appearing on my posts."
-msgstr "O rótulo não está aparecendo nos meus posts."
+msgstr "Etiket yazılarımda görünmyor."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:426
 msgid "Check that Enable output is ticked on the Settings tab."
-msgstr "Verifique se Ativar saída está marcado na aba Configurações."
+msgstr ""
+"Ayarlar sekmesinde Çıktıyı etkinleştir seçeneğinin işaretli olduğunu kontrol"
+" edin."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:427
 msgid ""
 "Check that the post type (e.g. Post, Page) is selected in the Post types "
 "list."
 msgstr ""
-"Verifique se o tipo de post (ex.: Post, Página) está selecionado na lista de"
-" Tipos de post."
+"Yazı tipleri listesinde yazı tipinin (örn. Yazı, Sayfa) seçili olduğunu "
+"kontrol edin."
 
 #. translators: %s is a setting name
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:432
@@ -391,25 +388,24 @@ msgid ""
 "If %s is ticked, the label will only show when the article has been edited "
 "after its original publish date."
 msgstr ""
-"Se %s estiver marcado, o rótulo só será exibido quando o artigo tiver sido "
-"editado após sua data de publicação original."
+"%s işaretliyse, etiket yalnızca makale orijinal yayın tarihinden sonra "
+"düzenlendiğinde gösterilir."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:433
 msgid "Only show when modified date differs from publish date"
-msgstr ""
-"Mostrar somente quando a data de modificação diferir da data de publicação"
+msgstr "Yalnızca değiştirilme tarihi yayın tarihinden farklıysa göster"
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:437
 msgid ""
 "If Automatic placement is set to Manual, nothing is injected automatically —"
 " add the template tag to your theme."
 msgstr ""
-"Se Posicionamento automático estiver definido como Somente manual, nada é "
-"injetado automaticamente — adicione a tag de template ao seu tema."
+"Otomatik yerleştirme Manuel olarak ayarlanmışsa, hiçbir şey otomatik olarak "
+"enjekte edilmez — şablon etiketini temanıza ekleyin."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:440
 msgid "How do I place the label exactly where I want it?"
-msgstr "Como posiciono o rótulo exatamente onde quero?"
+msgstr "Etiketi tam istediğim yere nasıl yerleştiririm?"
 
 #. translators: %1$s and %2$s are setting/function names
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:445
@@ -418,12 +414,12 @@ msgid ""
 "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your "
 "theme template wherever you want it to appear."
 msgstr ""
-"Defina Posicionamento automático como %1$s na aba Configurações e adicione "
-"%2$s no template do seu tema onde desejar que o rótulo apareça."
+"Ayarlar sekmesinde Otomatik yerleştirme'yi %1$s olarak ayarlayın, ardından "
+"görünmesini istediğiniz yere tema şablonunuzda %2$s ekleyin."
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:452
 msgid "Can I show just a static label with no date?"
-msgstr "Posso mostrar apenas um rótulo estático sem data?"
+msgstr "Tarihsiz sadece statik bir etiket gösterebilir miyim?"
 
 #. translators: %s is a literal %s placeholder shown in code
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:457
@@ -432,8 +428,8 @@ msgid ""
 "Yes. Remove %s from the Label template. The text will be output as-is with "
 "no date appended."
 msgstr ""
-"Sim. Remova %s do Modelo do rótulo. O texto será exibido como está, sem data"
-" anexada."
+"Evet. Etiket şablonundan %s'i çıkarın. Metin olduğu gibi, tarih eklenmeden "
+"çıktı olarak verilecektir."
 
 #. translators: %s is the URL to the plugin support forum on WordPress.org.
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:468
@@ -443,22 +439,22 @@ msgid ""
 "noreferrer\">plugin support forum on WordPress.org</a> for help, bug reports"
 " and feature requests."
 msgstr ""
-"Precisa de ajuda? Visite o <a href=\"%s\" target=\"_blank\" rel=\"noopener "
-"noreferrer\">fórum de suporte do plugin no WordPress.org</a> para ajuda, "
-"relatórios de bugs e pedidos de funcionalidades."
+"Yardıma mı ihtiyacınız var? Yardım, hata raporları ve özellik istekleri için"
+" <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org "
+"üzerindeki eklenti destek forumunu</a> ziyaret edin."
 
 #: includes/class-micro-site-care-post-last-updated-date.php:167
 msgid ""
 "Enjoying MSC: Post Last Updated Date? A quick review would really help other"
 " WordPress users find it."
 msgstr ""
-"Gostando de MSC: Data da última atualização do artigo? Uma rápida avaliação "
-"ajudaria muito outros usuários do WordPress a encontrá-lo."
+"MSC: Yazı Son Güncelleme Tarihi'nden memnun musunuz? Kısa bir inceleme diğer"
+" WordPress kullanıcılarının bulmasına gerçekten yardımcı olacaktır."
 
 #: includes/class-micro-site-care-post-last-updated-date.php:168
 msgid "Leave a review"
-msgstr "Deixar uma avaliação"
+msgstr "İnceleme bırak"
 
 #: includes/class-micro-site-care-post-last-updated-date.php:170
 msgid "No thanks"
-msgstr "Não, obrigado"
+msgstr "Hayır, teşekkürler"

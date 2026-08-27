@@ -3,6 +3,12 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.6.2] - 2026-08-27
+
+### Changed
+
+- Updated translations: added 8 new languages (Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic) and refreshed all 20 bundled locales to 100% string coverage.
+
 ## [1.6.1] - 2026-08-27
 
 ### Changed

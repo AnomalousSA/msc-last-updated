@@ -4,7 +4,7 @@ Tags: last updated date, last modified date, show modified date, dateModified sc
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.6.1
+Stable tag: 1.6.2
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ Readers and search engines both favour fresh content. MSC: Post Last Updated Dat
 * Clean HTML5 `<time>` element output with an ISO 8601 `datetime` attribute for SEO and screen readers.
 * Optional relative dates ("3 days ago") and a `[msclu_last_updated]` shortcode to place the date anywhere.
 * Lightweight: no JavaScript, no external services, a single option row — zero tracking, GDPR-friendly.
-* Translated into 12 languages (German, Spanish, French, Italian, Japanese, Dutch, Portuguese).
+* Translated into 20 languages (German, Spanish, French, Italian, Japanese, Dutch, Portuguese, Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic).
 * Developer-friendly: four filter hooks to customise visibility, label, CSS classes, and final HTML output.
 
 == Installation ==
@@ -113,6 +113,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 
 == Changelog ==
 
+= 1.6.2 =
+* Updated translations: added 8 new languages (Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic) and refreshed all 20 bundled locales to 100% string coverage.
+
 = 1.6.1 =
 * Tested with WordPress 7.1. No functional changes.
 
@@ -161,6 +164,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.6.2 =
+Updated translations: 8 new languages added (Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic) and all 20 locales refreshed to 100% coverage.
 
 = 1.6.1 =
 Compatibility update: confirmed tested against WordPress 7.1. No functional changes — safe update.

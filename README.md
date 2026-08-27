@@ -1,6 +1,6 @@
 # MSC: Post Last Updated Date
 
-![Version](https://img.shields.io/badge/version-1.6.1-blue)
+![Version](https://img.shields.io/badge/version-1.6.2-blue)
 ![License](https://img.shields.io/badge/license-GPL--2.0%2B-green)
 ![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple)
 ![WordPress](https://img.shields.io/badge/WordPress-5.9%2B-blue)
@@ -32,7 +32,7 @@ Display and control the post last-updated date in flexible positions.
 - **Template Tags** — `msclup_the_last_updated()` and `msclup_get_last_updated()` for manual placement
 - **Shortcode** — `[msclu_last_updated]` places the date anywhere shortcodes run
 - **Developer-Friendly** — Four filter hooks for visibility, label text, CSS classes, and final HTML output
-- **12 Languages** — German (DE/CH), Spanish (ES/MX), French (FR/CA), Italian, Japanese, Dutch (NL/BE), Portuguese (BR/PT)
+- **20 Languages** — German (DE/CH), Spanish (ES/MX), French (FR/CA), Italian, Japanese, Dutch (NL/BE), Portuguese (BR/PT), Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic
 
 ## Installation
 
@@ -127,7 +127,7 @@ Registration is skipped when a callback on the `msclu_pro_active` filter returns
 
 | Constant | Value | Description |
 |----------|-------|-------------|
-| `MSCLUD_PLUGIN_VERSION` | `'1.6.1'` | Current plugin version |
+| `MSCLUD_PLUGIN_VERSION` | `'1.6.2'` | Current plugin version |
 | `MSCLUD_PLUGIN_FILE` | `__FILE__` | Absolute path to main plugin file |
 | `MSCLUD_PLUGIN_DIR` | Plugin directory path | Absolute path to plugin directory |
 | `MSCLUD_PLUGIN_URL` | Plugin directory URL | URL to plugin directory |
@@ -252,7 +252,7 @@ composer run test:coverage
 
 ### Translations
 
-The plugin ships with 12 translations.
+The plugin ships with 20 translations.
 
 - **Text domain:** `micro-site-care-post-last-updated-date`
 - **Domain path:** `/languages`
@@ -268,7 +268,7 @@ wp i18n make-mo languages/
 
 To contribute a locale, copy the POT to `languages/micro-site-care-post-last-updated-date-{locale}.po`, translate it with [Poedit](https://poedit.net/) or any `.po` editor, compile it with the command above, and submit both files.
 
-**Supported locales:** de_DE, de_CH, es_ES, es_MX, fr_FR, fr_CA, it_IT, ja, nl_NL, nl_BE, pt_BR, pt_PT
+**Supported locales:** de_DE, de_CH, es_ES, es_MX, fr_FR, fr_CA, it_IT, ja, nl_NL, nl_BE, pt_BR, pt_PT, ru_RU, zh_CN, tr_TR, pl_PL, id_ID, sv_SE, uk, ar
 
 ### Composer Scripts
 
