@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: MSC: Post Last Updated Date 1.6.2\n"
+"Project-Id-Version: MSC: Post Last Updated Date 1.6.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date\n"
 "POT-Creation-Date: 2026-08-27T15:26:32+00:00\n"
 "PO-Revision-Date: 2026-08-27 00:00+0000\n"

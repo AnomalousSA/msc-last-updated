@@ -239,20 +239,20 @@ class Settings {
 									<tr>
 										<th scope="row"><label for="position"><?php esc_html_e( 'Automatic placement', 'micro-site-care-post-last-updated-date' ); ?></label></th>
 										<td>
-											<select id="position" name="position">
+											<select id="position" name="position" aria-describedby="position-description">
 												<option value="after"  <?php selected( 'after',  $options['position'] ); ?>><?php esc_html_e( 'After content',                        'micro-site-care-post-last-updated-date' ); ?></option>
 												<option value="before" <?php selected( 'before', $options['position'] ); ?>><?php esc_html_e( 'Before content',                       'micro-site-care-post-last-updated-date' ); ?></option>
 												<option value="both"   <?php selected( 'both',   $options['position'] ); ?>><?php esc_html_e( 'Before and after content',             'micro-site-care-post-last-updated-date' ); ?></option>
 												<option value="manual" <?php selected( 'manual', $options['position'] ); ?>><?php esc_html_e( 'Manual only (template tag)',           'micro-site-care-post-last-updated-date' ); ?></option>
 											</select>
-											<p class="description"><?php esc_html_e( 'Use Manual to place output via the template tag in your theme. See the Usage tab for examples.', 'micro-site-care-post-last-updated-date' ); ?></p>
+											<p id="position-description" class="description"><?php esc_html_e( 'Use Manual to place output via the template tag in your theme. See the Usage tab for examples.', 'micro-site-care-post-last-updated-date' ); ?></p>
 										</td>
 									</tr>
 									<tr>
 										<th scope="row"><label for="label_text"><?php esc_html_e( 'Label template', 'micro-site-care-post-last-updated-date' ); ?></label></th>
 										<td>
-											<input id="label_text" name="label_text" type="text" class="regular-text" value="<?php echo esc_attr( $options['label_text'] ); ?>" />
-											<p class="description">
+											<input id="label_text" name="label_text" type="text" class="regular-text" value="<?php echo esc_attr( $options['label_text'] ); ?>" aria-describedby="label-text-description" />
+											<p id="label-text-description" class="description">
 												<?php
 												printf(
 													/* translators: 1: literal %s token shown as code, 2: example label shown as code */
@@ -267,12 +267,12 @@ class Settings {
 									<tr>
 										<th scope="row"><label for="date_mode"><?php esc_html_e( 'Date format source', 'micro-site-care-post-last-updated-date' ); ?></label></th>
 										<td>
-											<select id="date_mode" name="date_mode">
+											<select id="date_mode" name="date_mode" aria-describedby="date-mode-description">
 												<option value="site"     <?php selected( 'site',     $options['date_mode'] ); ?>><?php esc_html_e( 'Use WordPress site date format', 'micro-site-care-post-last-updated-date' ); ?></option>
 												<option value="custom"   <?php selected( 'custom',   $options['date_mode'] ); ?>><?php esc_html_e( 'Use custom date format',          'micro-site-care-post-last-updated-date' ); ?></option>
 												<option value="relative" <?php selected( 'relative', $options['date_mode'] ); ?>><?php esc_html_e( 'Relative (e.g. "3 days ago")',    'micro-site-care-post-last-updated-date' ); ?></option>
 											</select>
-											<p class="description">
+											<p id="date-mode-description" class="description">
 												<?php
 												printf(
 													/* translators: %s is a URL */
@@ -286,8 +286,8 @@ class Settings {
 									<tr>
 										<th scope="row"><label for="custom_format"><?php esc_html_e( 'Custom date format', 'micro-site-care-post-last-updated-date' ); ?></label></th>
 										<td>
-											<input id="custom_format" name="custom_format" type="text" class="regular-text" value="<?php echo esc_attr( $options['custom_format'] ); ?>" />
-											<p class="description"><?php esc_html_e( 'Only used when Date format source is set to Custom. Default: F j, Y', 'micro-site-care-post-last-updated-date' ); ?></p>
+											<input id="custom_format" name="custom_format" type="text" class="regular-text" value="<?php echo esc_attr( $options['custom_format'] ); ?>" aria-describedby="custom-format-description" />
+											<p id="custom-format-description" class="description"><?php esc_html_e( 'Only used when Date format source is set to Custom. Default: F j, Y', 'micro-site-care-post-last-updated-date' ); ?></p>
 										</td>
 									</tr>
 									<tr>
@@ -312,6 +312,7 @@ class Settings {
 										<th scope="row"><?php esc_html_e( 'Post types', 'micro-site-care-post-last-updated-date' ); ?></th>
 										<td>
 											<fieldset>
+												<legend class="screen-reader-text"><?php esc_html_e( 'Post types', 'micro-site-care-post-last-updated-date' ); ?></legend>
 												<?php foreach ( $post_types as $post_type ) : ?>
 													<label style="display:block;margin-bottom:4px;">
 														<input type="checkbox" name="post_types[]" value="<?php echo esc_attr( $post_type->name ); ?>" <?php checked( in_array( $post_type->name, $options['post_types'], true ) ); ?> />
@@ -348,8 +349,8 @@ class Settings {
 					<table class="widefat striped" style="margin-bottom:1.5em;">
 						<thead>
 							<tr>
-								<th><?php esc_html_e( 'Mode', 'micro-site-care-post-last-updated-date' ); ?></th>
-								<th><?php esc_html_e( 'Expected output position', 'micro-site-care-post-last-updated-date' ); ?></th>
+								<th scope="col"><?php esc_html_e( 'Mode', 'micro-site-care-post-last-updated-date' ); ?></th>
+								<th scope="col"><?php esc_html_e( 'Expected output position', 'micro-site-care-post-last-updated-date' ); ?></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -373,8 +374,8 @@ class Settings {
 					<table class="widefat striped" style="margin-bottom:1.5em;">
 						<thead>
 							<tr>
-								<th><?php esc_html_e( 'Template setting', 'micro-site-care-post-last-updated-date' ); ?></th>
-								<th><?php esc_html_e( 'Example frontend output', 'micro-site-care-post-last-updated-date' ); ?></th>
+								<th scope="col"><?php esc_html_e( 'Template setting', 'micro-site-care-post-last-updated-date' ); ?></th>
+								<th scope="col"><?php esc_html_e( 'Example frontend output', 'micro-site-care-post-last-updated-date' ); ?></th>
 							</tr>
 						</thead>
 						<tbody>
@@ -410,7 +411,7 @@ class Settings {
 						?>
 					</p>
 					<table class="widefat striped" style="margin-bottom:1.5em;">
-						<thead><tr><th><?php esc_html_e( 'Token', 'micro-site-care-post-last-updated-date' ); ?></th><th><?php esc_html_e( 'Example output', 'micro-site-care-post-last-updated-date' ); ?></th></tr></thead>
+						<thead><tr><th scope="col"><?php esc_html_e( 'Token', 'micro-site-care-post-last-updated-date' ); ?></th><th scope="col"><?php esc_html_e( 'Example output', 'micro-site-care-post-last-updated-date' ); ?></th></tr></thead>
 						<tbody>
 							<tr><td><code>F j, Y</code></td><td><?php esc_html_e( 'March 28, 2026', 'micro-site-care-post-last-updated-date' ); ?></td></tr>
 							<tr><td><code>d/m/Y</code></td><td><?php esc_html_e( '28/03/2026', 'micro-site-care-post-last-updated-date' ); ?></td></tr>

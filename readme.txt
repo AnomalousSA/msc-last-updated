@@ -4,7 +4,7 @@ Tags: last updated date, last modified date, show modified date, dateModified sc
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.6.2
+Stable tag: 1.6.3
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -113,6 +113,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 
 == Changelog ==
 
+= 1.6.3 =
+* Accessibility: added table header scope attributes, fieldset legends, and ARIA descriptions.
+
 = 1.6.2 =
 * Updated translations: added 8 new languages (Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic) and refreshed all 20 bundled locales to 100% string coverage.
 
@@ -164,6 +167,9 @@ No measurable impact: the plugin loads no JavaScript, no stylesheets and makes n
 * Two-tab admin settings page with Usage & Support documentation tab.
 
 == Upgrade Notice ==
+
+= 1.6.3 =
+Accessibility: table header scopes, fieldset legends, and ARIA descriptions for assistive technology users. Safe update.
 
 = 1.6.2 =
 Updated translations: 8 new languages added (Russian, Simplified Chinese, Turkish, Polish, Indonesian, Swedish, Ukrainian, Arabic) and all 20 locales refreshed to 100% coverage.

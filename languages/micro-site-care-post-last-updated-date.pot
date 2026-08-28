@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0+.
 msgid ""
 msgstr ""
-"Project-Id-Version: MSC: Post Last Updated Date 1.6.2\n"
+"Project-Id-Version: MSC: Post Last Updated Date 1.6.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/micro-site-care-post-last-updated-date\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-27T18:34:57+00:00\n"
+"POT-Creation-Date: 2026-08-28T13:56:31+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: micro-site-care-post-last-updated-date\n"
@@ -78,7 +78,7 @@ msgid "Settings"
 msgstr ""
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:216
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:463
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:464
 msgid "Support"
 msgstr ""
 
@@ -95,12 +95,12 @@ msgid "Automatic placement"
 msgstr ""
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:243
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:356
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "After content"
 msgstr ""
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:244
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Before content"
 msgstr ""
 
@@ -181,194 +181,195 @@ msgid "Show on all public post types except selected"
 msgstr ""
 
 #: includes/class-micro-site-care-post-last-updated-date-settings.php:312
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:315
 msgid "Post types"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:337
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:338
 msgid "Save Settings"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:346
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:347
 msgid "Automatic Injection"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:347
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:348
 msgid "When a placement mode other than Manual is selected, the plugin automatically injects the last-updated label into singular post/page content via the_content filter."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:351
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:352
 msgid "Mode"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:352
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:353
 msgid "Expected output position"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:356
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
 msgid "Label appears below the post body."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:357
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
 msgid "Label appears above the post body."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 msgid "Before and after"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:358
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
 msgid "Label appears both above and below the post body."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:446
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:360
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:447
 msgid "Manual only"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:359
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:360
 msgid "Nothing is injected automatically. Use the template tag below in your theme file."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:363
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:364
 msgid "Label Template"
 msgstr ""
 
 #. translators: %s is a literal %s token placeholder shown in code
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:368
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:369
 #, php-format
 msgid "The Label template setting controls the text displayed. Use %s as the date placeholder."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:376
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:377
 msgid "Template setting"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:377
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:378
 msgid "Example frontend output"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:381
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:382
 msgid "Updated March 28, 2026"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:382
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:383
 msgid "Last checked: March 28, 2026"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:383
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:384
 msgid "Fresh content  (no date appended — displayed as-is)"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:387
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:388
 msgid "Template Tags"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:388
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:389
 msgid "Use these PHP functions anywhere in your theme when placement is set to Manual."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:391
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:392
 msgid "Echoes the rendered HTML directly. Use inside The Loop or pass a post ID."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:394
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:395
 msgid "Expected HTML output:"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:398
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:399
 msgid "Returns the rendered HTML string instead of echoing. Useful for further manipulation."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:402
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:403
 msgid "Date Format Reference"
 msgstr ""
 
 #. translators: %s is a URL
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:407
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:408
 #, php-format
 msgid "When using a custom date format, the same PHP date tokens used by WordPress apply. %s"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:408
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:409
 msgid "View full format reference &rarr;"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:414
 msgid "Token"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:413
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:414
 msgid "Example output"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:415
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:416
 msgid "March 28, 2026"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:416
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:417
 msgid "28/03/2026"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:417
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:418
 msgid "2026-03-28"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:418
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:419
 msgid "28 Mar 2026"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:422
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:423
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:424
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:425
 msgid "The label is not appearing on my posts."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:426
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:427
 msgid "Check that Enable output is ticked on the Settings tab."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:427
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:428
 msgid "Check that the post type (e.g. Post, Page) is selected in the Post types list."
 msgstr ""
 
 #. translators: %s is a setting name
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:432
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:433
 #, php-format
 msgid "If %s is ticked, the label will only show when the article has been edited after its original publish date."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:433
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:434
 msgid "Only show when modified date differs from publish date"
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:437
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:438
 msgid "If Automatic placement is set to Manual, nothing is injected automatically — add the template tag to your theme."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:440
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:441
 msgid "How do I place the label exactly where I want it?"
 msgstr ""
 
 #. translators: %1$s and %2$s are setting/function names
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:445
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:446
 #, php-format
 msgid "Set Automatic placement to %1$s on the Settings tab, then add %2$s in your theme template wherever you want it to appear."
 msgstr ""
 
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:452
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:453
 msgid "Can I show just a static label with no date?"
 msgstr ""
 
 #. translators: %s is a literal %s placeholder shown in code
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:457
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:458
 #, php-format
 msgid "Yes. Remove %s from the Label template. The text will be output as-is with no date appended."
 msgstr ""
 
 #. translators: %s is the URL to the plugin support forum on WordPress.org.
-#: includes/class-micro-site-care-post-last-updated-date-settings.php:468
+#: includes/class-micro-site-care-post-last-updated-date-settings.php:469
 #, php-format
 msgid "Need a hand? Visit the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">plugin support forum on WordPress.org</a> for help, bug reports and feature requests."
 msgstr ""

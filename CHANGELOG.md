@@ -3,6 +3,12 @@
 All notable changes to MSC Last Updated are documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.6.3] - 2026-08-28
+
+### Improved
+
+- Accessibility — added table header scope attributes, fieldset legends, and ARIA descriptions.
+
 ## [1.6.2] - 2026-08-27
 
 ### Changed
